@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.sample.base.R;
 import com.sample.detailslib.DetailsFragment;
 
 public class MainActivity extends AppCompatActivity {

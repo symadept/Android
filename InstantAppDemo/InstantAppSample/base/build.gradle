@@ -1,9 +1,13 @@
-apply plugin: 'com.android.application'
+//Step 1: change app module to base-feature module
+//Step 2: Rename app folder to base
+apply plugin: 'com.android.feature'
 
 android {
+    baseFeature true
+
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.sample.instantappsample"
+//        applicationId "com.sample.instantappsample"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
@@ -19,7 +23,7 @@ android {
 
     repositories {
         flatDir {
-            dirs 'libs'
+            dirs './libs'
         }
     }
 
